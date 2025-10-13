@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app) 
 
 
-data = pd.read_excel("C:\\xamp\htdocs\\cns2\\Aifelling\\python\\public\\Book1.xlsx") 
+data = pd.read_excel("python/public/Book1.xlsx") 
 
 X = data['Review']  
 y = data['Liked']  
@@ -50,3 +50,4 @@ if __name__ == '__main__':
 
 
 # print(data.columns)
+
