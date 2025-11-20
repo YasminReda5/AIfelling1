@@ -30,7 +30,7 @@ model.fit(X_train_vec, y_train)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    input_data = request.json.get('text', '')  
+    input_data = request.form.get('text', '')  
     if not input_data:
         return jsonify({"error": "No text provided"}), 400  
     input_vec = vectorizer.transform([input_data])  
@@ -50,6 +50,7 @@ def predict():
 
 
 # print(data.columns)
+
 
 
 
