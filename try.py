@@ -42,13 +42,14 @@ def predict():
 
     return jsonify({"sentiment": sentiment})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+  #  app.run(debug=True)
 # import pandas as pd
 # data = pd.read_excel("C:\\Users\\H.DATA\\Desktop\\Book10.xlsx") 
 # print(data)
 
 
 # print(data.columns)
+
 
 
